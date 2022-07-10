@@ -53,7 +53,12 @@ public class SwaggerIoTest {
 
     @Test(description = "GET")
     public void getPet() {
-        given().when().get("https://petstore.swagger.io/v2/pet/10").then().log().all();
+        given()
+            .when()
+            .get("https://petstore.swagger.io/v2/pet/10")
+            .then()
+            .log()
+            .all();
     }
 
     @Test(description = "DELETE")
